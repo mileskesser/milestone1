@@ -1,0 +1,47 @@
+
+<html>
+<link rel="stylesheet" href="stylesheet.css" />
+<head>
+  <style>
+    h2 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+    form {text-align: center;}
+    input {width: 75px;}
+    .butt {background-color:cadetblue;}
+  </style>
+</head>
+
+<body >
+
+
+  <div style="margin:100px;">
+    <h2 >What is my zodiac sign?</h2>
+    <p >To learn more, enter your birthday and click <strong>Submit!</strong></p>
+
+    <form id="input_month" method="POST" action="/zodiacSign">
+      <select name="month">
+        <option value="" disabled selected>Select a Month</option>
+        <option >January</option>
+        <option >February</option>
+        <option >March</option>
+        <option >April</option>
+        <option >May</option>
+        <option >June</option>
+        <option >July</option>
+        <option >August</option>
+        <option >September</option>
+        <option >October</option>
+        <option >November</option>
+        <option >December</option>
+      </select>
+
+      <input  placeholder="Day" type="number" name="day" min="1" max="31">
+    
+      <input class="butt" type="submit" value="Submit">
+    </form>
+  </div>
+
+
+</body>
+</html>
